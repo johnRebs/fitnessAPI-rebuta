@@ -25,7 +25,7 @@ mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atl
 const workoutRoutes = require("./routes/workout");
 const userRoutes = require("./routes/user");
 
-app.use("/items", itemRoutes);
+app.use("/workouts", workoutRoutes);
 app.use("/users", userRoutes);
 
 if(require.main === module){
