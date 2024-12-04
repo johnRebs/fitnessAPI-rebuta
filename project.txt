@@ -1,0 +1,93 @@
+Answer the the questions bellow using the info above: replace the answers.
+
+Objective: ExpressJS API - Fitness Tracker
+
+1. What is the main objective of the project?
+	- ExpressJS API - Fitness Tracker with Simple CRUD functionalities
+
+2. Who are the target users of the application?
+	- Fitness enthusiasts or individuals who want to track their workouts.
+
+3. What are the core features or functionalities required?
+
+	- Basic CRUD operations for managing workouts: (Create, Read, Update, Delete).
+		- Authenticated user ability to retrieve a list of their workouts.
+		- Authenticated user ability to add a new workout.
+		- Authenticated user ability to update an existing workout.
+		- Authenticated user ability to delete a workout.
+		- Mark a workout as complete.
+
+4. What data will the application need to store and manage?
+
+	- Workout Details:
+		- Name of the workout
+		- Type of workout
+		- Duration
+		- Status (e.g., completed or not)
+
+	- User information 
+		- Email
+		- Password
+		- Other relevant profile information (optional)
+
+5. Are there any specific technical requirements or constraints?
+
+	- Express.js API.
+	- MongoDB with Mongoose for data storage and management.
+	- RESTful Architecture.
+
+6. What are the security and authentication requirements?
+
+	- Token-based Authentication (JWT).
+	- Bcrypt hashing for secure password storage
+
+7. What are your routes and controllers?
+
+	Routes:
+
+	User Routes:
+
+	- POST /login: User login route.
+	- POST /register: User registration route.
+
+	Inventory Routes:
+
+	- POST /addWorkout: Add a new workout.
+	- GET /getMyWorkouts: Retrieve a list of all workouts for the authenticated user.
+	- PUT /updateWorkout: Update an existing workout.
+	- DELETE /deleteWorkout: Delete a workout.
+	- PUT /completeWorkoutStatus: Mark a workout as complete.
+
+	Controllers:
+
+	User Controller:
+
+	- loginUser
+	- registerUser
+
+	Workout Controller:
+
+	- addWorkout
+	- getMyWorkouts
+	- updateWorkout
+	- deleteWorkout
+	- completeWorkoutStatus
+
+
+
+	Create the following files using the info above:
+	- index.js
+	- auth.js
+	- package.json
+	
+	- Routes:
+		- user.js
+		- workout.js
+	
+	- Controllers:
+		- user.js
+		- workout.js
+
+	- Models:
+		- User.js
+		- Workout.js
